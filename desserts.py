@@ -46,6 +46,15 @@ class Cupcake:
 
       return new_ingredients
 
+    @classmethod
+    def get(cls, name):
+
+      if name not in cls.cache:
+        print("Sorry, that cupcake doesn't exist")
+
+      else:
+        return cls.cache[name]
+
 if __name__ == '__main__':
     import doctest
 
