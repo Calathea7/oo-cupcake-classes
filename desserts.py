@@ -26,10 +26,13 @@ class Cupcake:
     def sell(self, amount):
 
       if self.qty == 0:
-        print('Sorry, these cupcakes are sold out')
-      
-      while self.qty >= amount:
-        self.qty = self.qty - amount
+        print("Sorry, these cupcakes are sold out")
+
+      elif self.qty < amount:
+        self.qty = 0
+
+      else:
+        self.qty -= amount
 
     # @staticmethod
     # def scale_recipe(ingredients, amount):
