@@ -83,3 +83,5 @@ Or print if it doesn't exist:
 
   >>> Cupcake.get('Devil\'s Food Cake')
   Sorry, that cupcake doesn't exist
+
+"""
